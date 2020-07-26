@@ -1,2 +1,3 @@
 # Frame_Difference
 ov7725_Gray_Med_Frame_Difference
+2020年新工科联盟-Xilinx暑期学校（Summer School）项目
