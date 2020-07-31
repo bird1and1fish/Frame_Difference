@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>zzw</spirit:vendor>
+  <spirit:library>zzw</spirit:library>
+  <spirit:name>camera_value</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
+      <spirit:slave>
+        <spirit:memoryMapRef spirit:memoryMapRef="S00_AXI"/>
+      </spirit:slave>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awaddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>AWREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_awready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>WREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_wready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>BREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_bready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_araddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arprot</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>ARREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_arready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_rready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>WIZ_NUM_REG</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" spirit:minimum="4" spirit:maximum="512" spirit:rangeType="long">5</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>SUPPORTS_NARROW_BURST</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXI.SUPPORTS_NARROW_BURST" spirit:choiceRef="choice_pairs_ce1226b1">0</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXI_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axi_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:memoryMaps>
+    <spirit:memoryMap>
+      <spirit:name>S00_AXI</spirit:name>
+      <spirit:addressBlock>
+        <spirit:name>S00_AXI_reg</spirit:name>
+        <spirit:baseAddress spirit:format="long" spirit:resolve="user">0</spirit:baseAddress>
+        <spirit:range spirit:format="long">4096</spirit:range>
+        <spirit:width spirit:format="long">32</spirit:width>
+        <spirit:usage>register</spirit:usage>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>OFFSET_BASE_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_BASE_PARAM">C_S00_AXI_BASEADDR</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>OFFSET_HIGH_PARAM</spirit:name>
+            <spirit:value spirit:id="ADDRBLOCKPARAM_VALUE.S00_AXI.S00_AXI_REG.OFFSET_HIGH_PARAM">C_S00_AXI_HIGHADDR</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:addressBlock>
+    </spirit:memoryMap>
+  </spirit:memoryMaps>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesis</spirit:name>
+        <spirit:displayName>Verilog Synthesis</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>camera_value_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>69a9c370</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogbehavioralsimulation</spirit:name>
+        <spirit:displayName>Verilog Simulation</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>camera_value_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>69a9c370</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_softwaredriver</spirit:name>
+        <spirit:displayName>Software Driver</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:sw.driver</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_softwaredriver_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>ad09b10b</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>dda4df14</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>cap_pclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cap_vsync</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>cap_threshole</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awaddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_awready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_wready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_bready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_araddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH&apos;)) - 1)">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arprot</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_arready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_rready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axi_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI data bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXI address bus</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">5</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_pairs_ce1226b1</spirit:name>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/camera_value_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/camera_value_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_7b6064a9</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesis_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>hdl/camera_value_v1_0_S00_AXI.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/camera_value_v1_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_fifo_generator_13_2__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.2">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>drivers/camera_value_v1_0/data/camera_value.mdd</spirit:name>
+        <spirit:userFileType>mdd</spirit:userFileType>
+        <spirit:userFileType>driver_mdd</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/camera_value_v1_0/data/camera_value.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>driver_tcl</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/camera_value_v1_0/src/Makefile</spirit:name>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/camera_value_v1_0/src/camera_value.h</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/camera_value_v1_0/src/camera_value.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>drivers/camera_value_v1_0/src/camera_value_selftest.c</spirit:name>
+        <spirit:fileType>cSource</spirit:fileType>
+        <spirit:userFileType>driver_src</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/camera_value_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_dda4df14</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>camera_value_v1.0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI DATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI data bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_DATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXI ADDR WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXI address bus</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_ADDR_WIDTH" spirit:order="4" spirit:rangeType="long">5</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_ADDR_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_BASEADDR</spirit:name>
+      <spirit:displayName>C S00 AXI BASEADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_BASEADDR" spirit:order="5" spirit:bitStringLength="32">0xFFFFFFFF</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_BASEADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXI_HIGHADDR</spirit:name>
+      <spirit:displayName>C S00 AXI HIGHADDR</spirit:displayName>
+      <spirit:value spirit:format="bitString" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXI_HIGHADDR" spirit:order="6" spirit:bitStringLength="32">0x00000000</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXI_HIGHADDR">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">camera_value_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>camera_value_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>16</xilinx:coreRevision>
+      <xilinx:upgrades>
+        <xilinx:canUpgradeFrom>xilinx.com:user:camera_value:1.0</xilinx:canUpgradeFrom>
+      </xilinx:upgrades>
+      <xilinx:coreCreationDateTime>2020-07-17T11:55:08Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ef2c366_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a0d5e99_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bdc43e5_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59b5982a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@669ef976_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2217a603_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2466314d_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d9155a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@425c41b6_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9784aa0_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64d3d635_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e70470f_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd229_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1707729a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fa0542c_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a938221_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ab1e9d_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ec52cd6_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24de25fc_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47cce854_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42ed91a1_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cae2da6_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33e3bab0_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c52cc53_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/ip_prj/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42dc24c1_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f6dd145_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9b782a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c015aab_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17b3a51_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1db9c768_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16f89d07_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26765434_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ad65536_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bf14c94_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47f3abb0_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48b68912_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f9bcb8e_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27c28936_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ff4e2e_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6641980b_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53e68fbb_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c9b167f_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d010def_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5879214b_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c010025_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bb96faf_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4159db4_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ae144d_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cd2b637_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a053d48_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29b36dae_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48067a61_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e5ccf33_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6da4085a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dbf2ad8_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@710b160b_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4af660cf_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c311314_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@187b6e57_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76ab6729_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b3b12f6_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@229abca7_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ce32b8_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23d2cb95_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38f2819f_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a9af175_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b681cad_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4031cd5a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@617952bb_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@906dc61_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@456a7284_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d16c07f_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b27b71a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@342689cf_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2382ab26_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2105828e_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c6b6a61_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73349096_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2603d795_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d9cf7ca_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8839032_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38e69fa1_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@402b26c4_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c147e76_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a162dd6_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@313a2a85_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@128294cc_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b272095_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44d7203c_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2519b89e_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ff08e02_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fd1b524_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@666bcbb9_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fd77701_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@691d3284_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c07cd56_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e7e64b2_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6989928d_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@132b1b63_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d0a3b33_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c95446_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47a4c090_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5df5e6ce_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5902a22b_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a7360ac_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@239b9f47_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f7300f9_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19bc4ca8_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e369b8b_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@304dc57_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@547a979d_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@306c77d8_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@529d57d9_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a252387_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@237c18f1_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@746d983f_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d2fc4d2_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5056dc8a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6dcf0b5c_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aaf2221_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22d91d08_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e72b1c2_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1928435a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c7e1431_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21f4d708_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e8bf397_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35434a67_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79fd169a_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ad625df_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53592618_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2843d075_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76c1f507_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f97983d_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ddfc3ab_ARCHIVE_LOCATION">h:/Desktop/PYNQ/Zynq/VIP/my_ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a4c58d6_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39b3cd69_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43a39ac6_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bcbe21f_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a4f51d7_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a689e20_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c19effe_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37cb2991_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fe7349d_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23c1126b_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@172284bc_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22f34ca5_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32c4b0fd_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7248e0d_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@676bd965_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57fb614_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@251336f2_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@113d5d16_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ef552f_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a4e7497_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c4361ec_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@503067eb_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1716d419_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3552313_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47656577_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f051386_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25f32e27_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19371c38_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e504850_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ba400f_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38f78d0e_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ce80109_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a8b0c93_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f14b1dc_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12cbb96c_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@91b412b_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3729e49_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@97646fa_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@385509f7_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35ce1d6a_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74ec29c5_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d04c75b_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4df41f68_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dbb83f4_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47aeedb7_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@715375af_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c861427_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@653c0589_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3855f326_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@325637de_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28bbac9a_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50e81121_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75300ced_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fa90d3f_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b6b312e_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cc9deb4_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@539e49f7_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15cd6727_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@579ae4cb_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@243debb9_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e5de88c_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46889130_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6753327f_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52236f85_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c8bf7ef_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53480627_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41141319_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a24936d_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c336979_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c0daa7_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b17e096_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c1dc8ba_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@438ccc1d_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@264a1d87_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ff29e07_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72ce8d07_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@158222bd_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78f8f4aa_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7485627d_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2189918f_ARCHIVE_LOCATION">h:/Desktop/VIP_OV7725_Examples/ip_rope/Camera/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d388208_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56a201d3_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@429cdc40_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30e63a38_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ccd5cf_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7086a1f_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93e83b4_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@648abede_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b778895_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c242d07_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74871afb_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c8d7838_ARCHIVE_LOCATION">h:/Desktop/fdma_demo/ip_rope/ov_camera_value/camera_value_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="77e219dd"/>
+      <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2fb5b5b7"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="c71a5301"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="2e811c89"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a1a7279d"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
